@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Main {
+public class clickerGame {
     public static void main(String[] args) {
         JFrame frame = new JFrame ("My app");
         JLabel label = new JLabel("0");
