@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionEvent.*;
 import java.awt.event.ActionListener;
-import java.awt.event.ActionListener.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,7 +31,13 @@ public class Main {
         minus.addActionListener(new ActionListener(){
           public void actionPerformed(ActionEvent e){
               int counter = Integer.parseInt(label.getText()); //reads the value of the label and converts it to int and assigns it to the variable called counter.
-          counter--; //increment the value of counter
+          if (counter<=0){
+              counter=0;
+          }
+
+          if (counter>0){
+              counter--;
+          }
               label.setText(String.valueOf(counter));
              }
         });
